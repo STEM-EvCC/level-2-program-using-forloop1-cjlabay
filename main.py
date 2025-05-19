@@ -11,9 +11,6 @@ print(f"Total number of missions: {len(mission_names)}")
 print(f"Number of successful missions: {mission_success.count(True)}")
 print(f"Success rate: {"{:.2f}".format((mission_success.count(True) / len(mission_success)) * 100)}%")
 print("Missions launched before the year 2000:")
-missions_before_2000 = []
 for i in range(len(mission_names)):
     if mission_years[i] <2000:
-        missions_before_2000.append(mission_names[i])
-for mission in missions_before_2000:
-    print("- " + mission)
+        print("- " + mission_names[i])
